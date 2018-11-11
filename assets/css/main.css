@@ -1,0 +1,179 @@
+.main-page {
+  /* background-color: rgb(137, 255, 33); */
+}
+
+.main-container {
+  margin: 4% auto;
+  padding: 2%;
+}
+
+.main-title {
+  color: rgb(171, 245, 95);
+  text-align: center;
+  font-size: 3rem;
+}
+
+.header-index {
+  align-items: center;
+  height: 99px;
+  background-color: rgba(0, 0, 0, 0.69);
+  display: flex;
+  justify-content: center;
+}
+
+.signUp-with {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form {
+  width: 30%;
+  margin: 4% auto;
+}
+
+.facebook-button {
+  font-weight: 800;
+  color: white;
+  background-color: rgb(63, 80, 169);
+  border-radius: 2rem;
+  height: 55px;
+  margin-bottom: 15px;
+}
+
+.instagram-button {
+  font-weight: 800;
+  color: white;
+  /* background-color: rgb(63, 80, 169); */
+  background: linear-gradient(
+    to bottom,
+    rgb(251, 173, 80) 0%,
+    rgb(138, 58, 185) 100%
+  );
+  border-radius: 2rem;
+  height: 55px;
+  margin-bottom: 15px;
+}
+
+.gmail-button {
+  color: white;
+  font-weight: 800;
+  background-color: #c74343;
+  border-radius: 2rem;
+  height: 55px;
+  margin-bottom: 15px;
+}
+
+.line-thru:before {
+  width: 40px;
+  height: 10px;
+  background-color: #fff;
+  content: "";
+  margin: -5px 0 0 -20px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+}
+
+.line-thru:after {
+  border-bottom: 1px solid #dfe0e6;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 64%;
+  width: 100%;
+  z-index: -2;
+}
+
+.line-thru {
+  display: block;
+  font-size: 0.875em;
+  margin-bottom: 1em;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+form h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 1.4rem;
+}
+
+.signUp-btn {
+  width: 80%;
+  background-color: rgb(171, 245, 95);
+  color: white;
+  border-color: rgb(171, 245, 95);
+  margin: 15px 10%;
+  border-radius: 1.8rem;
+  font-weight: 600;
+  height: 53px;
+}
+
+/*  ######################## MAIN Page ##########################*/
+
+.header-main {
+  align-items: center;
+  height: 76px;
+  background-color: rgba(0, 0, 0, 0.69);
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: center; */
+}
+
+.main-main-title {
+  margin-left: 15px;
+  color: rgb(171, 245, 95);
+  /* text-align: center; */
+  font-size: 2.2rem;
+}
+
+.header-main li {
+  list-style: none;
+}
+
+.nav-items-right {
+  margin-top: unset;
+  margin-bottom: unset;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-right {
+  width: 33%;
+}
+
+li p {
+  color: white;
+  font-size: 21px;
+  margin-top: unset;
+  margin-bottom: unset;
+}
+
+.card-body2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.avator {
+  width: 25%;
+}
+
+.avator img {
+  width: 100%;
+}
+
+.song-title {
+  margin-bottom: unset;
+  margin-top: unset;
+  text-align: center;
+}
+
+.card2 {
+  width: 15rem;
+  margin: auto;
+}
