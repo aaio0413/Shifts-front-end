@@ -5,7 +5,7 @@
 
 .main-container {
   margin: 0 auto;
-  /* padding: 2%; */
+  padding: 2%;
 }
 
 .main-title {
@@ -182,7 +182,7 @@ li p {
 
 .main-container h2 {
   color: rgba(0, 0, 0, 0.69);
-  margin: 2.5% 11px;
+  margin: 2.5% 4px;
 }
 
 .row {
@@ -208,4 +208,99 @@ li p {
 
 .progress {
   margin-bottom: 12%;
+}
+
+/* Photo by Stephen Niemeier from Pexels */
+.main-picture-for-my-shiftz {
+  background-image: url("../images/audio-dj-mix-63703.jpg");
+  height: 661px;
+  background-size: cover;
+  background-position-y: 46%;
+  width: 100%;
+}
+
+.marketing-blurp-for-myshiftz {
+  font-size: 42px;
+  position: absolute;
+  text-align: center;
+  top: 366px;
+  right: 8%;
+  color: rgb(255, 255, 255);
+}
+
+.second-text-wrapper {
+  /* font-size: 42px; */
+}
+
+.body-background1 {
+  background-color: rgb(91, 226, 121);
+  width: 100%;
+  margin-top: -28px;
+}
+
+.first-text-wrapper2 h2 {
+  padding-bottom: 2.5%;
+}
+
+.main-background2 {
+  background-color: rgba(241, 241, 241, 0.89);
+  width: 100%;
+}
+
+.second-text-wrapper h2 {
+  margin-top: 0;
+  margin-bottom: 2.5%;
+}
+
+/*     SEARCH PAGE */
+
+.main-picture-for-search {
+  background-image: url("../images/abstract-art-background-1037999.jpg");
+  height: 500px;
+  background-size: cover;
+  background-position-y: 49%;
+  width: 100%;
+}
+
+.main-search-window {
+  height: 55px;
+  position: absolute;
+  top: 540px;
+  right: 28%;
+  width: 40%;
+}
+
+.marketing-blurp-search {
+  font-size: 42px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+
+.search-button {
+  height: 62px;
+  width: 436px !important;
+}
+
+#searchSubmit {
+  height: 62px;
+  width: 112px;
+  background-color: rgb(105, 208, 66);
+  color: white;
+  font-size: 24px;
+}
+
+.second-main {
+  background-color: rgba(0, 0, 0, 0.79);
+  height: auto;
+}
+
+.lec-wrapper {
+  text-align: center;
+  width: 60%;
+  height: 50px;
+  position: absolute;
+  top: 468px;
+  margin-left: 20%;
 }
