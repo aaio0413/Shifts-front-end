@@ -1,0 +1,24 @@
+{
+  "name": "shifts-front-end",
+  "version": "1.0.0",
+  "description": "SHIFTZ front end ideas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaio0413/Shifts-front-end.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaio0413/Shifts-front-end/issues"
+  },
+  "homepage": "https://github.com/aaio0413/Shifts-front-end#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.8"
+  }
+}
