@@ -5,9 +5,10 @@ const path = require("path");
 const app = express();
 
 // set view engine
+
+app.use(express.static(__dirname + "../public"));
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "../views"));
-app.use(express.static(path.join(__dirname, "../public")));
 
 // set up routes
 app.use("/auth", authRoutes);

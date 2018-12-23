@@ -255,7 +255,7 @@ li p {
 /*     SEARCH PAGE */
 
 .main-picture-for-search {
-  background-image: url("../images/abstract-art-background-1037999.jpg");
+  background-image: url("../public/images/abstract-art-background-1037999.jpg");
   height: 500px;
   background-size: cover;
   background-position-y: 49%;
