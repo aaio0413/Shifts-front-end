@@ -8,39 +8,39 @@ html(lang='ja')
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous")
     link(rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous")
-    link(rel='stylesheet', href='/css/main.css')
+    link(rel='stylesheet', href='/public/css/main.css', type='text/css')
     title SHIFTZ
 
   body.main-page
+    style 
+      include ../public/css/main.css
  
     header.header-main
       h2.main-main-title SHIFTZ
       div.nav-right
         ul.nav-items-right
-          <!-- <li> -->
-          <!--
-          form.form-inline.my-2.my-lg-0
-            input(type="search"
-              placeholder="Search"
-              aria-label="Search").form-control.mr-sm-2
+ 
+          //- form.form-inline.my-2.my-lg-0
+          //-   input(type="search"
+          //-     placeholder="Search"
+          //-     aria-label="Search").form-control.mr-sm-2
               
-            button(type="submit").btn.btn-outline-success.my-2.my-sm-0
-            |Search
+          //-   button(type="submit").btn.btn-outline-success.my-2.my-sm-0 Search
           li
-            p My Shiftz
+            p
+              | My Shiftz
           li
             p How you feelin'?
           li
             p Account
         </ul>
 
-    //- <!-- <div class="first-text-wrapper"><h2>Songs people sharing</h2></div> -->
-    //- <div class="main-picture">
-    //-   <h3 class="marketing-blurp">
-    //-     プレミアム SHIFTZ で人生をもっと快適に過ごそう。
-    //-   </h3>
-    //- </div>
-    //- <!-- Photo by Vincent Gerbouin from Pexels -->
+    div.main-picture
+      h3.marketing-blurp
+        | プレミアム SHIFTZ で人生をもっと快適に過ごそう。
+      //- image(src="/images/beach-beach-chairs-blue-sky-1174732.jpg")
+ 
+      //- Photo by Vincent Gerbouin from Pexels 
     //- <div class="container main-container">
     //-   <div class="first-text-wrapper"><h2>Songs people are sharing</h2></div>
     //-   <div class="row">
