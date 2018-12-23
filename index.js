@@ -1,14 +1,14 @@
 const express = require("express");
-const authRoutes = require("../routes/auth-routes");
+const authRoutes = require("./routes/auth-routes");
 const path = require("path");
 
 const app = express();
 
 // set view engine
 
-app.use(express.static(__dirname + "../public"));
+app.use(express.static(__dirname + "/public"));
 app.set("view engine", "pug");
-app.set("views", path.join(__dirname, "../views"));
+app.set("views", path.join(__dirname, "./views"));
 
 // set up routes
 app.use("/auth", authRoutes);
