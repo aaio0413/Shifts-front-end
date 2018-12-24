@@ -1,3 +1,5 @@
+/*                                                         LOGIN PAGE                                               */
+
 .main-page {
   background-color: rgba(255, 255, 255, 0.78);
   /* background-color: rgb(137, 255, 33); */
@@ -12,6 +14,15 @@
   color: rgb(171, 245, 95);
   text-align: center;
   font-size: 3rem;
+}
+
+.titleColorAdjust {
+  color: rgb(171, 245, 95);
+}
+
+.titleColorAdjust:hover {
+  color: rgb(171, 245, 95) !important;
+  text-decoration: none;
 }
 
 .header-index {
@@ -115,7 +126,7 @@ form h2 {
   height: 53px;
 }
 
-/*  ######################## MAIN Page ##########################*/
+/*                              ########################                  MAIN Page                           ##########################*/
 
 .header-main {
   align-items: center;
@@ -252,7 +263,7 @@ li p {
   margin-bottom: 2.5%;
 }
 
-/*     SEARCH PAGE */
+/*                                   ###################        SEARCH PAGE                   ########################                    */
 
 .main-picture-for-search {
   background-image: url("../public/images/abstract-art-background-1037999.jpg");

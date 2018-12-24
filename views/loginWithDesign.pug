@@ -1,0 +1,56 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8") 
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous")
+    link(rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous")
+    link(rel="stylesheet" href="css/main.css")
+    title login
+    
+  body.main-page
+    header.header-index
+      h2.main-title 
+        a(href="/" class="titleColorAdjust") SHIFTZ
+    div.login-form
+      section.signUp-with
+        button.facebook-button SIGN UP WITH FACEBOOK
+        button.instagram-button SIGN UP WITH INSTAGRAM
+        button.gmail-button
+          a(href="/auth/google/") SIGN UP WITH GMAIL
+      strong.line-thru or 
+
+      form  
+        h2
+          strong Sing up with your email address
+        div.form-row
+          div.form-group.col-md-6
+            //- !-- label for="inputEmail4">Email/label> -->
+            input(type="email" class="form-control"
+              id="inputEmail4"
+              placeholder="Email")
+          div.form-group.col-md-6
+            //- !-- label for="inputPassword4">Password/label> -->
+            input(
+              type="password"
+              class="form-control"
+              id="inputPassword4"
+              placeholder="Confirm Email")
+        div.form-group
+          //- !-- label for="inputAddress">Address/label> -->
+          input(
+            type="text"
+           class="form-control"
+            id="inputAddress"
+            placeholder="Password")
+
+       
+        button(type="submit" class="btn btn-primary signUp-btn") SIGN UP
+
