@@ -1,6 +1,9 @@
+require("dotenv").config();
 const express = require("express");
 const authRoutes = require("./routes/auth-routes");
 const path = require("path");
+const passportSetup = require("./config/passport-setup");
+const mongodb = require("mongoose");
 
 const app = express();
 
@@ -21,6 +24,14 @@ app.get("/", (req, res) => {
 app.get("/login", (req, res) => {
   res.render("loginWithDesign");
 });
+
+//connect mongoDB
+mongodb.connect(
+  process.env.MONGO_DB_URL,
+  () => {
+    console.log("connected mongoDB");
+  }
+);
 
 // app.get("*", (req, res) => {
 //   res.render("static" + req.url, function(err, html) {
