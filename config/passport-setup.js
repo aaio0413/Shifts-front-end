@@ -2,6 +2,10 @@ const passport = require("passport");
 const GoogleStrategy = require("passport-google-oauth20");
 const User = require("../models/user-model.js");
 
+passport.serializeUser((user, done) => {
+  done(null, user.id);
+});
+
 passport.use(
   new GoogleStrategy(
     {
@@ -19,6 +23,7 @@ passport.use(
       User.findOne({ googleId: profile.id }).then(userExsist => {
         if (userExsist) {
           console.log("user found", userExsist);
+          done(null, userExsist);
         } else {
           new User({
             userName: profile.displayName,
@@ -27,6 +32,7 @@ passport.use(
             .save()
             .then(newUser => {
               console.log("new user created", newUser);
+              done(null, newUser);
             });
         }
       });
