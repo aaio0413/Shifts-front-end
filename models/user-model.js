@@ -3,7 +3,7 @@ const Schema = mongodb.Schema;
 
 const userSchema = new Schema({
   userName: String,
-  goolgeId: String
+  googleId: String
 });
 
 const User = mongodb.model("user", userSchema);

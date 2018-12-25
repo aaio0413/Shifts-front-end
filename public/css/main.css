@@ -40,6 +40,10 @@
   flex-direction: column;
 }
 
+.signUp-with a {
+  color: white;
+}
+
 .login-form {
   width: 30%;
   margin: 4% auto;
