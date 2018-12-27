@@ -2,8 +2,16 @@ const router = require("express").Router();
 const passport = require("passport");
 
 // auth login
+// router.get("/login", (req, res) => {
+//   res.render("login", { user: req.user });
+// });
+
 router.get("/login", (req, res) => {
-  res.render("login", { user: req.user });
+  res.render("newLogin", { user: req.user });
+});
+
+router.get("/signup", (req, res) => {
+  res.render("signUp");
 });
 
 // auth logout
@@ -22,7 +30,8 @@ router.get(
 
 //auth callback from google
 router.get("/google/redirect", passport.authenticate("google"), (req, res) => {
-  res.send("I reach here");
+  //res.send(req.user);
+  res.redirect("/myShiftz");
 });
 
 module.exports = router;

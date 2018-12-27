@@ -12,10 +12,13 @@ html(lang="en")
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous")
-    link(rel="stylesheet" href="css/main.css")
-    title login
+    //- link(rel="stylesheet" href="css/main.css")
+    title signup
     
   body.main-page
+    style 
+      include ../public/css/main.css
+
     header.header-index
       h2.main-title 
         a(href="/" class="titleColorAdjust") SHIFTZ
@@ -51,5 +54,14 @@ html(lang="en")
             id="inputAddress"
             placeholder="Password")
             
-        button(type="submit" class="btn btn-primary signUp-btn") SIGN UP
+        div.form-row.signUpButtonWrap
+          div.form-check
+            input(type="checkbox" class="form-check-input" id="exampleCheck1")
+            label(class="form-check-label" for="exampleCheck1") Remember me
+    
+          button(type="submit" class="btn btn-primary login-btn") Signup
+        
+      h2.leadToSignUp Already have an account?
+      button(class="btn btn-primary signUp-btn")
+        a(class="attributeNone" href='/auth/login') Login
 

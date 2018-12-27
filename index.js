@@ -1,9 +1,12 @@
 require("dotenv").config();
 const express = require("express");
 const authRoutes = require("./routes/auth-routes");
+const myShiftzRoutes = require("./routes/myShiftz-routes");
 const path = require("path");
 const passportSetup = require("./config/passport-setup");
 const mongodb = require("mongoose");
+const cookieSession = require("cookie-session");
+const passport = require("passport");
 
 const app = express();
 
@@ -13,16 +16,26 @@ app.use(express.static(__dirname + "/public"));
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "./views"));
 
+//cookie setUp
+
+app.use(
+  cookieSession({
+    maxAge: 24 * 60 * 60 * 1000,
+    keys: [process.env.COOKIEKEY]
+  })
+);
+
+//initialize passport
+app.use(passport.initialize());
+app.use(passport.session());
+
 // set up routes
 app.use("/auth", authRoutes);
+app.use("/myShiftz", myShiftzRoutes);
 
 // create home route
 app.get("/", (req, res) => {
   res.render("index");
-});
-
-app.get("/login", (req, res) => {
-  res.render("loginWithDesign");
 });
 
 //connect mongoDB
