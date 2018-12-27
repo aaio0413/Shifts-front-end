@@ -121,6 +121,29 @@ form h2 {
 
 .signUp-btn {
   width: 80%;
+  background-color: white;
+  color: black;
+  border: solid 2px rgba(70, 70, 70, 0.84);
+  margin: 15px 10%;
+  border-radius: 1.8rem;
+  font-weight: 600;
+  height: 53px;
+}
+
+.leadToSignUp {
+  text-align: center;
+  margin-bottom: unset;
+  margin: 3% 0;
+}
+
+.signUpButtonWrap {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.login-btn {
+  float: right;
+  width: 40%;
   background-color: rgb(171, 245, 95);
   color: white;
   border-color: rgb(171, 245, 95);
@@ -128,6 +151,16 @@ form h2 {
   border-radius: 1.8rem;
   font-weight: 600;
   height: 53px;
+}
+
+.attributeNone {
+  color: black;
+  text-decoration: none;
+}
+
+.attributeNone:hover {
+  color: white;
+  text-decoration: none;
 }
 
 /*                              ########################                  MAIN Page                           ##########################*/
