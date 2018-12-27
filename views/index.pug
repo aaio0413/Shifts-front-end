@@ -15,28 +15,7 @@ html(lang='ja')
     style 
       include ../public/css/main.css
  
-    header.header-main
-      h2.main-main-title SHIFTZ
-      div.nav-right
-        ul.nav-items-right
- 
-          //- form.form-inline.my-2.my-lg-0
-          //-   input(type="search"
-          //-     placeholder="Search"
-          //-     aria-label="Search").form-control.mr-sm-2
-              
-          //-   button(type="submit").btn.btn-outline-success.my-2.my-sm-0 Search
-          li
-            p
-              | My Shiftz
-          li
-            p How you feelin'?
-          li
-            p 
-              a(href="/auth/signUp") Signup
-          li
-            p 
-              a(href="/auth/login") Login
+    include includes/headerHome.pug
 
 
     div.main-picture
@@ -96,7 +75,7 @@ html(lang='ja')
                 i.far.fa-heart 
                 i.fas.fa-share-square
  
-          div.row
+      div.row
         div.col-3
           div.card.card2
             img(class="card-img-top", src="https://i.scdn.co/image/2231b36a70b54f6702a123726158b1ddbcf6bf26", alt="Card image cap")

@@ -1,0 +1,136 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    )
+    link(
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    )
+    link(rel="stylesheet" href="../css/main.css")
+    title MyShiftz
+
+  body.main-page
+    include includes/headerNormal.pug
+
+    div.main-picture-for-my-shiftz
+      h3.marketing-blurp-for-myshiftz #{userName}'s SHIFTZ
+
+    //- <!-- Photo by Vincent Gerbouin from Pexels -->
+    div.body-background1
+      div.container.main-container
+        div.first-text-wrapper2
+          h2 Songs You Shared Recently
+ 
+        div.row
+          div.col-3
+            div.card.card2
+                img(class="card-img-top", src="https://i.scdn.co/image/2231b36a70b54f6702a123726158b1ddbcf6bf26", alt="Card image cap")
+                div.card-body.card-body2
+                    div.avator
+                        img(src="https://cdn0.iconfinder.com/data/icons/iconshock_guys/512/andrew.png")
+            
+                    p.song-title Come Over When You're Sober
+                    div.star-and-share
+                        i.far.fa-heart 
+                        i.fas.fa-share-square
+        
+          div.col-3
+            div.card.card2
+                img(class="card-img-top", src="https://i.scdn.co/image/997575a5644176a1f975020c8ed5733becca06a4", alt="Card image cap")
+                div.card-body.card-body2
+                    div.avator
+                        img(src="https://cdn0.iconfinder.com/data/icons/iconshock_guys/512/andrew.png")
+            
+                    p.song-title Still My Moment
+                    div.star-and-share
+                        i.far.fa-heart 
+                        i.fas.fa-share-square
+
+          div.col-3
+            div.card.card2
+                img(class="card-img-top", src="https://i.scdn.co/image/37bbb4711235a0128db66a66074321d3c2ef2ff7", alt="Card image cap")
+                div.card-body.card-body2
+                    div.avator
+                        img(src="https://cdn0.iconfinder.com/data/icons/iconshock_guys/512/andrew.png")
+            
+                    p.song-title thank u, next
+                    div.star-and-share
+                        i.far.fa-heart 
+                        i.fas.fa-share-square
+
+          div.col-3
+            div.card.card2
+                img(class="card-img-top", src="https://i.scdn.co/image/8984042f24e62f3e53ebfa8d408e49ed58d90ec9", alt="Card image cap")
+                div.card-body.card-body2
+                    div.avator
+                        img(src="https://cdn0.iconfinder.com/data/icons/iconshock_guys/512/andrew.png")
+            
+                    p.song-title A Love Letter To You 3
+                    div.star-and-share
+                        i.far.fa-heart 
+                        i.fas.fa-share-square
+
+    div.main-background2
+      div.container.main-container
+        div.second-text-wrapper
+            h2 Your Playlists
+
+        div.row
+          div.col-3
+            div.card.card2
+                img(class="card-img-top", src="https://i.scdn.co/image/2231b36a70b54f6702a123726158b1ddbcf6bf26", alt="Card image cap")
+                div.card-body.card-body2
+                    div.avator
+                        img(src="https://cdn0.iconfinder.com/data/icons/iconshock_guys/512/andrew.png")
+            
+                    p.song-title Come Over When You're Sober
+                    div.star-and-share
+                        i.far.fa-heart 
+                        i.fas.fa-share-square
+            
+          div.col-3
+            div.card.card2
+                img(class="card-img-top", src="https://i.scdn.co/image/997575a5644176a1f975020c8ed5733becca06a4", alt="Card image cap")
+                div.card-body.card-body2
+                    div.avator
+                        img(src="https://cdn0.iconfinder.com/data/icons/iconshock_guys/512/andrew.png")
+            
+                    p.song-title Still My Moment
+                    div.star-and-share
+                        i.far.fa-heart 
+                        i.fas.fa-share-square
+
+          div.col-3
+            div.card.card2
+                img(class="card-img-top", src="https://i.scdn.co/image/37bbb4711235a0128db66a66074321d3c2ef2ff7", alt="Card image cap")
+                div.card-body.card-body2
+                    div.avator
+                        img(src="https://cdn0.iconfinder.com/data/icons/iconshock_guys/512/andrew.png")
+            
+                    p.song-title thank u, next
+                    div.star-and-share
+                        i.far.fa-heart 
+                        i.fas.fa-share-square
+
+          div.col-3
+            div.card.card2
+                img(class="card-img-top", src="https://i.scdn.co/image/8984042f24e62f3e53ebfa8d408e49ed58d90ec9", alt="Card image cap")
+                div.card-body.card-body2
+                    div.avator
+                        img(src="https://cdn0.iconfinder.com/data/icons/iconshock_guys/512/andrew.png")
+            
+                    p.song-title A Love Letter To You 3
+                    div.star-and-share
+                        i.far.fa-heart 
+                        i.fas.fa-share-square
+
