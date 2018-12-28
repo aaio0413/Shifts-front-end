@@ -16,7 +16,7 @@ passport.use(
   new GoogleStrategy(
     {
       //option for strategy
-      callbackURL: "/auth/google/redirect",
+      callbackURL: "https://shiftz-jp.herokuapp.com/auth/google/redirect",
       clientID: process.env.GOOGLE_CLIENT,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET
     },
