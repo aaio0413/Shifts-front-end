@@ -29,9 +29,13 @@ router.get(
 );
 
 //auth callback from google
-router.get("/google/redirect", passport.authenticate("google"), (req, res) => {
-  //res.send(req.user);
-  res.redirect("/myShiftz");
-});
+router.get(
+  "/google/redirect",
+  passport.authenticate("google", { failureRedirect: "/login" }),
+  (req, res) => {
+    //res.send(req.user);
+    res.redirect("/myShiftz");
+  }
+);
 
 module.exports = router;
