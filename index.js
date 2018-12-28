@@ -38,6 +38,7 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+console.log("this is process.env here", process.env.MONGO_DB_URL);
 //connect mongoDB
 mongodb.connect(
   process.env.MONGO_DB_URL,
@@ -59,6 +60,6 @@ mongodb.connect(
 //   });
 // });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("app now listening for requests on port 3000");
 });
