@@ -10,9 +10,15 @@ header.header-main
           a(href="/myShiftz") My Shiftz
       li
         p How you feelin'?
-      li
-        p 
-          a(href="/auth/signUp") Signup
-      li
-        p 
-          a(href="/auth/login") Login
+      
+      if (!user)
+        li
+          p 
+            a(href="/auth/signUp") Signup
+        li
+          p 
+            a(href="/auth/login") Login
+      else 
+        li
+          p
+            a(href='/auth/logout') Logout
