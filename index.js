@@ -35,10 +35,9 @@ app.use("/myShiftz", myShiftzRoutes);
 
 // create home route
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("index", { user: req.user });
 });
 
-console.log("this is process.env here", process.env.MONGO_DB_URL);
 //connect mongoDB
 mongodb.connect(
   process.env.MONGO_DB_URL,
