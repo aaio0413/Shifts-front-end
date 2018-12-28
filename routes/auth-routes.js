@@ -31,7 +31,7 @@ router.get(
 //auth callback from google
 router.get("/google/redirect", passport.authenticate("google"), (req, res) => {
   //res.send(req.user);
-  res.redirect("https://shiftz-jp.herokuapp.com/myShiftz");
+  res.redirect("/myShiftz");
 });
 
 module.exports = router;
